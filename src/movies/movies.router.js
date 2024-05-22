@@ -10,4 +10,10 @@ router.route("/?is_showing=true")
 router.route("/:movieId")  
   .get(controller.read)
 
+router.route("/:movieId/theaters")  
+  .get(controller.readWithTheaters)
+
+router.route("/:movieId/reviews")  
+  .get(controller.readWithReviews)
+
 module.exports = router
