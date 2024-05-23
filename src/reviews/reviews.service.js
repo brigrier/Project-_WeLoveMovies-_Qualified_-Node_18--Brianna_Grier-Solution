@@ -1,5 +1,5 @@
 const knex = require("../db/connection");
-
+/*
 async function update(updatedReview) {
     const { review_id, ...reviewData } = updatedReview;
 
@@ -9,6 +9,7 @@ async function update(updatedReview) {
 
    
 }
+*/
 
 function destroy(review_id) {
     return knex("reviews")
